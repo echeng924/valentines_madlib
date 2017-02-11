@@ -1,0 +1,70 @@
+body {
+	background-color: white;
+	margin: 0;
+	font-size: 40px;
+	color: white;
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+#main {
+	height: 800px;
+	text-align: center;
+}
+
+.logo {
+}
+
+.main-button {
+	height: 100px;
+    width: 250px;
+    display: block;
+    background-color: #9FE6DB;
+    border: none;
+    margin-left: 40%;
+}
+
+a {
+	font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#questions {
+	height: 800px;
+	background-color: #9FE6DB;
+	width: 100%;
+	text-align: center;
+	padding-top: 14%;
+}
+
+
+input {
+	font-size: 15px;
+    margin: 1%;
+    padding: 21px;
+    width: 253px;
+}
+
+.prompt-button {
+	height: 50px;
+    width: 100px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    background-color: #F28686;
+}
+
+.fill {
+	background: white;
+	color: #F28686;
+	padding: 0px 5px;
+
+}
+
+.poem {
+	background-color: rgba(255,255,255, 0.3);
+    width: 500px;
+    margin-left: 34%;
+    padding: 20px;
+}

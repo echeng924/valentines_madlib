@@ -68,3 +68,17 @@ input {
     margin-left: 34%;
     padding: 20px;
 }
+
+.emojis {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 3em;
+  border-radius: 50%;
+  z-index: 0;
+
+}
+
+.heart {
+	position: absolute;
+}

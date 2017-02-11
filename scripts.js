@@ -26,13 +26,31 @@ let showFinal = function() {
 	$('.prompt-button').hide();
 }
 
+let emojiBurst = function(numHearts){
+  let $emojis;
+  const $body = $('body');
+  for (let i = 0; i < numHearts; i++) {
+    let emojiArray = ['LOVE', '&hearts;']
+    let randomEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length) + 0  ]
+    $emojis = $('<p>').addClass('heart').html(randomEmoji);
+    $body.append($emojis);
+    $emojis.animate({
+      top: Math.floor(Math.random() * 200) - 50 + '%',
+      left: Math.floor(Math.random() * 200) - 50 + '%',
+      opacity: 0,
+    }, 4000, 'linear');
+  }
+}
+
 $( ".prompt-button" ).click(function() {
   	nextPrompt();
+  	emojiBurst(25);
 });
 
 
-$('input').keyup(function() {
-	alert("alerted");
-})
+
+// $('.prompt').change(function() {
+// 	emojiBurst(10);
+// })
 
 nextPrompt();
